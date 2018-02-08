@@ -24,8 +24,10 @@ const Counter = ({
 }) => (
     <div>
         <h1>{value}</h1>
+        <button className="bigChange" onClick={() => { onIncrement(); onIncrement(); }}>++</button>
         <button onClick={onIncrement}>+</button>
         <button onClick={onDecrement}>-</button>
+        <button className="bigChange" onClick={() => { onDecrement(); onDecrement(); }}>--</button>
     </div>
 );
 
